@@ -1,0 +1,26 @@
+{
+   "docks" : [
+     "localhost:4243"
+   ],
+   "env" : "prod",
+   "services" : [ 9090 ],
+   "args" : [
+      "-metricsStoragePath=/srv/prometheus-platforms/prometheus/storage",
+      "-configFile=/srv/prometheus-platforms/prometheus/prometheus.conf",
+      "-curationRemarksCacheSize=5242880",
+      "-fingerprintsToLabelPairCacheSizeBytes=26214400",
+      "-highWatermarksByFingerprintSizeBytes=5242880",
+      "-labelNameToFingerprintsCacheSizeBytes=26214400",
+      "-labelPairToFingerprintsCacheSizeBytes=26214400",
+      "-metricMembershipCacheSizeBytes=5242880",
+      "-samplesByFingerprintCacheSizeBytes=52428800",
+      "-arena.flushInterval=10m",
+      "-arena.ttl=5m"
+   ],
+   "job" : "platforms",
+   "image" : "106ac040e039",
+   "volumes" : [
+      "prometheus-platforms"
+   ],
+   "product" : "prometheus"
+}

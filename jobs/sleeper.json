@@ -1,0 +1,17 @@
+{
+   "docks" : [
+     "localhost:4243"
+   ],
+   "services" : [ 1234 ],
+   "args" : [
+      "sleep",
+      "60"
+   ],
+   "image" : "b750fe79269d",
+   "volumes" : [
+      "prometheus-platforms"
+   ],
+   "product" : "hankie",
+   "env" : "test",
+   "job" : "sleeper"
+}
